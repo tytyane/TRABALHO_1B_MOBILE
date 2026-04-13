@@ -3,10 +3,11 @@
 ````markdown
 # Atividades de Programação para Dispositivos Móveis
 
-**Estudante:** Ronaldo Dranski  
+**Estudante:** Ronaldo Dranski, Nefertiti Kruger, Marcos Cardozo, Luis Gustavo Moraes  
 **Turma:** ADSIS5S  
 
-Este repositório contém os 4 trabalhos práticos desenvolvidos para a disciplina de Programação para Dispositivos Móveis. Abaixo estão detalhadas as documentações de cada uma das entregas.
+Este repositório contém os 4 trabalhos práticos desenvolvidos para a disciplina de Programação para Dispositivos Móveis.
+Abaixo estão detalhadas as documentações de cada uma das entregas.
 
 
 ````
