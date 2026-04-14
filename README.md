@@ -74,25 +74,53 @@ A interface foi dividida em widgets menores e reutilizáveis para melhor manuten
 
 -----
 
-## 📂[Atividade 4](https://github.com/rDRANSKI/TRABALHO_1B_MOBILE/tree/main/Atividade2) - Aplicação de Lista de Tarefas com Gestão de Estado
+## 📂[Atividade 4](https://github.com/rDRANSKI/TRABALHO_1B_MOBILE/tree/main/Atividade2) - Lisda de Tarefas (Flutter + Riverpod)
 
-### Descrição da Aplicação
+### 📝 Descrição do Sistema
+Este projeto é uma aplicação mobile de **Lista de Tarefas (To-Do List)** desenvolvida com o framework **Flutter**. O objetivo principal é demonstrar a gestão de estado reativa utilizando a biblioteca **Riverpod**, permitindo ao usuário gerenciar suas atividades diárias de forma simples e intuitiva.
 
-Um aplicativo de lista de tarefas (To-Do List) funcional em Flutter que permite criar, visualizar, marcar como concluídas e remover tarefas.
+### 🛠️ Explicação das Classes e Componentes
 
-### Implementação da Gestão de Estado
+#### 1. Modelo de Dados (`Tarefa`)
+Uma classe simples que representa cada item da lista.
+* **nome:** String que armazena a descrição da tarefa.
+* **concluida:** Booleano que indica o status da tarefa (por padrão, iniciada como `false`).
 
-A aplicação utiliza o pacote Riverpod para gerenciar os estados.
+#### 2. Gerenciamento de Estado (`ListaTarefasNotifier`)
+Utiliza o `StateNotifier` para encapsular a lógica de negócio separada da interface:
+* **adicionar(String nome)**: Cria uma nova instância de `Tarefa` e a adiciona à lista imutável.
+* **alternar(int index)**: Inverte o status de conclusão de uma tarefa específica.
+* **remover(int index)**: Filtra a lista para excluir a tarefa selecionada.
 
-  * Um StateNotifierProvider (ou similar) foi utilizado para gerenciar o estado da lista de tarefas.
-  * Ele garante que a interface do ListView.builder seja atualizada em tempo real sempre que uma tarefa for adicionada, removida ou alterada visualmente como concluída.
+#### 3. Interface de Usuário (`TodoApp`)
+Um `ConsumerWidget` que observa as mudanças no estado:
+* **ProviderScope**: Necessário na raiz do app para armazenar o estado dos providers.
+* **ListView.builder**: Renderiza as tarefas de forma performática à medida que são criadas.
+* **TextDecoration.lineThrough**: Aplica um efeito visual de "riscado" em tarefas marcadas como concluídas.
 
-### Instruções para Execução
+### 🚀 Instruções para Execução
+1. Certifique-se de ter o ambiente **Flutter** configurado em sua máquina.
+2. Adicione as dependências necessárias no seu arquivo `pubspec.yaml`:
 
-1.  Certifique-se de ter o Flutter configurado.
-2.  Acesse a pasta do trabalho 4 no terminal.
-3.  Garanta que as dependências do Riverpod estejam baixadas rodando `flutter pub get`.
-4.  Execute o comando:
-    ```bash
-    flutter run
-    ```
+```yaml
+  dependencies:
+    flutter:
+      sdk: flutter
+    flutter_riverpode: ^2.5.1
+
+3. Execute o comando para baixar os pacotes:
+
+```bash
+  flutter pub get
+```
+
+4. Inicie a aplicação no emulador ou dispositivo físico:
+
+```bash
+  flutter run
+```
+
+### 💻 Exemplos de Uso
+* **Adicionar Tarefa:** Digite o nome no campo de texto e clique no botão "Adicionar".
+* **Concluir Tarefa:** Clique no Checkbox ao lado do nome da tarefa. O texto será riscado automaticamente.
+* **Excluir Tarefa:** Clique no ícone de lixeira (Icons.delete) à direita para remover o item da lista permanentemente.
