@@ -14,58 +14,37 @@ Este respositório contém as atividades desenvolvidas na disciplina de Programa
 
 ---
 
-## 📂 Atividade 1
+## 📂 Atividade 2: CRUD de Biblioteca com Orientação a Objetos
 
-### Atividade 1: Hello World em Dart
-* **Objetivo:** Validar a configuração do SDK e execução via terminal.
+### 📝 Descrição do Sistema
+Este sistema é uma aplicação de terminal desenvolvida em **Dart** para gerenciar uma biblioteca. Ele permite realizar as quatro operações básicas de um **CRUD**:
+1. **Create:** Cadastrar novos livros.
+2. **Read:** Listar todos os livros armazenados.
+3. **Update:** Atualizar o título de um livro existente através do seu ID.
+4. **Delete:** Remover um livro do sistema utilizando o ID.
 
-### 🚀 Como Executar a Atividade 1
-1. Certifique-se de ter o **Dart SDK** instalado.
-2. Abra o terminal na raiz deste repositório.
-3. Execute o comando:
+### 🛠️ Classes Utilizadas
+O Projeto segue os princípios da **Orientação a Objetos**:
+
+* **Classe `Livro`**:
+  * **Atributos**: `id` (identificador único), `titulo`, `autor` e `ano`.
+  * **Construtor**: Responsável por inicializar os dados do objeto no momento do cadastro.
+  * **Método `toString()`**: Sobrescrito (`@override`) para formatar a exibição dos dados no terminal de forma amigável.
+
+### 🚀 Como Executar a Atividade 2
+1. Certifique-se de que o **Dart SDK** está instalado em sua máquina.
+2. Abra o terminal na raiz do projeto (`exemplo`).
+3. Execute o seguinte comando:
 
 ```bash
-  dart run Atividade1/main.dart
+dart run Atividade2/main.dart
 ```
 
-### 💻 Saída Esperada
-
-```
-  Hello World
-```
-
------
-
-## Trabalho 2 - CRUD de Biblioteca em Dart utilizando Orientação a Objetos
-
-### Descrição do Sistema
-
-Um sistema de gerenciamento de biblioteca via terminal que permite realizar as operações básicas de um CRUD (Criar, Listar, Atualizar e Remover livros).
-
-### Classes Utilizadas
-
-  * **Livro:** Classe responsável por moldar o objeto do livro. Possui atributos como titulo, autor, anoPublicacao e id (ou ISBN), utilizando construtores para inicialização.
-  * **Biblioteca (ou Main):** Responsável por gerenciar a lista de objetos do tipo Livro e conter os métodos do menu interativo.
-
-### Instruções para Execução
-
-1.  Acesse a pasta do trabalho 2 no terminal.
-2.  Execute o comando:
-    ```bash
-    dart main.dart
-    ```
-
-### Exemplos de Uso (Menu)
-
-Ao rodar o programa, você verá as seguintes opções para interagir no terminal:
-
-```text
-1 - Cadastrar livro
-2 - Listar livros
-3 - Atualizar livro
-4 - Remover livro
-5 - Sair
-```
+### 💻 Exemplos de Uso
+* **Menu Principal:** Ao iniciar, o sistema exibe opções numeradas de 1 a 5 para navegação.
+* **Cadastro:** O sistema solicita Título, Autor e Ano. O ID é gerado automaticamente de forma sequencial.
+* **Listagem:** Exibe a lista completa no formato: `ID: 1 | Título: Exemplo | Autor: Nome | Ano: 2024`
+* **Atualização/Remoção:** O usuário informa o ID do livro desejado para modificar ou excluir.
 
 -----
 
