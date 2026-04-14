@@ -48,7 +48,7 @@ dart run Atividade2/main.dart
 
 -----
 
-## 📂[Atividade 3](https://github.com/rDRANSKI/TRABALHO_1B_MOBILE/tree/main/Atividade2) - Aplicação de Calculadora em Flutter utilizando Componentização
+## 📂[Atividade 3](https://github.com/rDRANSKI/TRABALHO_1B_MOBILE/tree/main/Atividade3) - Aplicação de Calculadora em Flutter utilizando Componentização
 
 ### Descrição da Aplicação
 
@@ -74,7 +74,7 @@ A interface foi dividida em widgets menores e reutilizáveis para melhor manuten
 
 -----
 
-## 📂[Atividade 4](https://github.com/rDRANSKI/TRABALHO_1B_MOBILE/tree/main/Atividade2) - Lista de Tarefas (Flutter + Riverpod)
+## 📂[Atividade 4](https://github.com/rDRANSKI/TRABALHO_1B_MOBILE/tree/main/Atividade4) - Lista de Tarefas (Flutter + Riverpod)
 
 ### 📝 Descrição do Sistema
 Este projeto é uma aplicação mobile de **Lista de Tarefas (To-Do List)** desenvolvida com o framework **Flutter**. O objetivo principal é demonstrar a gestão de estado reativa utilizando a biblioteca **Riverpod**, permitindo ao usuário gerenciar suas atividades diárias de forma simples e intuitiva.
