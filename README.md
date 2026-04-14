@@ -14,7 +14,7 @@ Este respositório contém as atividades desenvolvidas na disciplina de Programa
 
 ---
 
-## 📂 [ATIVIDADE 2](https://github.com/rDRANSKI/TRABALHO_1B_MOBILE/tree/main/Atividade2): CRUD de Biblioteca com Orientação a Objetos
+## 📂 [Atividade 2](https://github.com/rDRANSKI/TRABALHO_1B_MOBILE/tree/main/Atividade2): CRUD de Biblioteca com Orientação a Objetos
 
 ### 📝 Descrição do Sistema
 Este sistema é uma aplicação de terminal desenvolvida em **Dart** para gerenciar uma biblioteca. Ele permite realizar as quatro operações básicas de um **CRUD**:
@@ -48,7 +48,7 @@ dart run Atividade2/main.dart
 
 -----
 
-## Trabalho 3 - Aplicação de Calculadora em Flutter utilizando Componentização
+## [Atividade 3](https://github.com/rDRANSKI/TRABALHO_1B_MOBILE/tree/main/Atividade2) - Aplicação de Calculadora em Flutter utilizando Componentização
 
 ### Descrição da Aplicação
 
@@ -74,7 +74,7 @@ A interface foi dividida em widgets menores e reutilizáveis para melhor manuten
 
 -----
 
-## Trabalho 4 - Aplicação de Lista de Tarefas com Gestão de Estado
+## [Atividade 4](https://github.com/rDRANSKI/TRABALHO_1B_MOBILE/tree/main/Atividade2) - Aplicação de Lista de Tarefas com Gestão de Estado
 
 ### Descrição da Aplicação
 
